@@ -10,6 +10,9 @@ The `password_manager` project is a tool designed to securely store, manage, and
 - Support for multiple accounts and services.
 - Cross-platform compatibility.
 
+## Important
+- Please create RSA key-pair and put it in `password_manager_latest` directory to use encryption response
+
 ## Installation
 1. Clone the repository:
     ```bash
