@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+
+  backend:
+    container_name: password_manager
+    build:
+      context: ../
+      dockerfile: ./deployment/Dockerfile
+    env_file: ../password_manager_latest/.env
+    command: sh ./deployment/entrypoint.sh
+    volumes:
+      - ../:/code
+    network_mode: "host"
+    restart: always

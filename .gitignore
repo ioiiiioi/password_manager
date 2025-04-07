@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# VScode configuration
+.vscode 
+
 # Distribution / packaging
 .Python
 build/
@@ -172,3 +175,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Certificate files
+*.pem
+*.crt
