@@ -18,7 +18,7 @@ RUN uv pip install --system --no-deps .
 # Salin seluruh kode aplikasi ke working directory
 COPY . /app
 
-# RUN uv run manage.py migrate --noinput
+RUN uv run manage.py migrate --noinput
 
 # Expose port yang digunakan Daphne
 EXPOSE 8000

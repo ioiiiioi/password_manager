@@ -166,10 +166,12 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 S3_BUCKET_NAME = 'portal-kampus-django-static'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.ap-southeast-3.amazonaws.com/static' % S3_BUCKET_NAME
 
-STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
-STATICFILES_DIRS = [
-    STATIC_URL
-]
+# STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+# STATICFILES_DIRS = [
+#     STATIC_URL
+# ]
+STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
